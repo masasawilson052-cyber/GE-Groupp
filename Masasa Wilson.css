@@ -1,0 +1,267 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #0a2b3b 0%, #0a1f2c 100%);
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* MAIN CONTAINER - Glass-like white layer with soft shadow */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    border-radius: 32px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* HEADINGS - rich navy blue with gold accent */
+h1 {
+    font-size: 32px;
+    color: #0b3b5f;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #0f4c5c, #1b6b7a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    border-bottom: 3px solid #ffb74d;
+    padding-bottom: 5px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #1a5d6c;
+    border-left: 5px solid #ffb74d;
+    padding-left: 12px;
+    transition: all 0.2s;
+}
+
+h2:hover {
+    border-left-width: 8px;
+    transform: translateX(4px);
+    color: #0a3b47;
+}
+
+h3 {
+    color: #1a5d6c;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* STUDENT NAME - elegant gradient */
+.student-name {
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(120deg, #0f4c5c, #2c7a7b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* PARAGRAPHS - soft dark gray */
+p {
+    margin-bottom: 15px;
+    color: #2d3e50;
+    transition: transform 0.2s;
+}
+
+p:hover {
+    transform: translateX(5px);
+    color: #0f4c5c;
+}
+
+/* PROFILE PICTURE - interactive glow */
+.profile {
+    text-align: center;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffb74d;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile:hover {
+    transform: scale(1.05) rotate(2deg);
+    border-color: #ff9f3d;
+    box-shadow: 0 0 20px #ffb74d;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+/* SKILLS LISTS - animated bullets */
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 24px;
+    transition: all 0.2s;
+    cursor: pointer;
+    color: #2d3e50;
+}
+
+ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #ffb74d;
+    transition: transform 0.2s, color 0.2s;
+}
+
+ul li:hover::before {
+    transform: translateX(4px);
+    color: #e67e22;
+}
+
+ul li:hover {
+    transform: translateX(6px);
+    color: #0b3b5f;
+}
+
+/* Nested lists */
+ul ul {
+    margin-left: 24px;
+    margin-top: 4px;
+}
+
+ul ul li::before {
+    content: "◦";
+}
+
+/* TABLE - clean, modern */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    background: linear-gradient(135deg, #1f6d7a, #0f4c5c);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #cbd5e0;
+    transition: background 0.2s;
+    color: #2d3e50;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #fff3e0;
+}
+
+/* HOBBIES SECTION */
+.hobbies {
+    margin-top: 15px;
+}
+
+/* SECTION CARDS - subtle glass */
+.section {
+    margin-bottom: 25px;
+    padding: 18px;
+    border-radius: 24px;
+    background: #ffffffcc;
+    backdrop-filter: blur(2px);
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.section:hover {
+    background: #fffaf0;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* LINKS - cool warm underline effect */
+a {
+    color: #d97706;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 2px 0;
+    transition: color 0.2s;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffb74d;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+a:hover {
+    color: #b45309;
+}
+
+/* RESPONSIVE (mobile friendly) */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .profile {
+        width: 120px;
+        height: 120px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .section {
+        padding: 12px;
+    }
+    table th, table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+}

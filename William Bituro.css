@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #5686369c;
+    padding: 40px 20px;
+}
+
+/* Container to center the portfolio on the screen */
+body > * {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================
+   TYPOGRAPHY
+   ========================================== */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   PROFILE PHOTO SECTION
+   ========================================== */
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   LISTS (Skills, Hobbies)
+   ========================================== */
+ol, ul {
+    background: #835858;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    
+}
+
+li {
+    font-size: 1.05rem;
+    color: #444444;
+    margin-bottom: 8px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Nested list specific styles */
+ul ul {
+    background: transparent;
+    box-shadow: none;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   EDUCATION TABLE
+   ========================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+/* Table header */
+tr:first-child th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Add subtle alternating row colors */
+tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+tr:hover {
+    background-color: #f1f7fc;
+}
+
+/* Fixing the th tags used in your HTML rows to look like normal data */
+tr:not(:first-child) th {
+    font-weight: normal;
+    color: #555555;
+    text-align: left;

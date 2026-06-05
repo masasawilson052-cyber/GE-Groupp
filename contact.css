@@ -1,0 +1,168 @@
+body {
+  background-image: url("images\ \(1\).jpeg");
+      background-size: cover;
+      color: #d40808;
+    
+}
+
+/* SECTION */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: rgb(10, 182, 125);
+}
+
+.team-section h1 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+/* GRID: 3 UP, 3 DOWN */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: #969e257e;
+    color: rgb(165, 16, 16);
+    padding: 25px;
+    border-radius: 20px;
+
+    transition: 0.3s;
+ 
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE CIRCLE */
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #1de9b6;
+}
+
+/* TEXT */
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.contact-form-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem 2rem 2.5rem;
+    background: rgba(45, 94, 13, 0.589);
+    backdrop-filter: blur(12px);
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Heading – crisp and bright */
+.contact-form-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #fff, #e0e7ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: -0.5px;
+}
+
+/* Form Group – spacing */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Labels – subtle but readable */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #f1f5f9;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Inputs & Textarea – smooth glass inputs */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 24px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    outline: none;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background: white;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+    transform: scale(1.01);
+}
+
+/* Placeholder style */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #475569;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+/* Submit Button – gradient + hover effect */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(105deg, #3b82f6, #a855f7);
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(105deg, #2563eb, #9333ea);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+    /* Contact Form Container – Glassmorphism + Centered Layout */
+}

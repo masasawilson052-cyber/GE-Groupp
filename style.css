@@ -1,0 +1,210 @@
+
+
+body {
+    background-color: #68083d3a;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+/* 1. Header & Navigation (Basic CSS) */
+.top-header {
+    background-color:rgba(11, 182, 82, 0.4);
+    color: hsl(23, 94%, 51%);
+    font-size: 14px;
+    padding: 8px 5%;
+    text-align: right;
+}
+
+.top-header span {
+    margin-left: 15px;
+}
+
+.navbar {
+    background-color: #1a1e36;
+    padding: 15px 5%;
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 ;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.logo span {
+    color: #37c2a4;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    background-color: oklch(73.411% 0.18902 135.5);
+    color: #ffffff;
+}
+
+/* 2. Hero Section (Advanced CSS Background & Gradient) */
+.hero-section {
+    position: relative;
+    height: 70vh;
+    min-height: 400px;
+    background-image: url("download\(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradient overlay inspired by the sample image */
+    background: linear-gradient(135deg, rgba(26, 30, 54, 0.85) 0%, rgba(41, 128, 185, 0.4) 100%);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 650px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #37c2a4;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 28px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff8c42;
+}
+
+/* 3. Section Styling */
+.info-section {
+    padding: 60px 5%;
+    background-size: cover;
+    background-position: center;
+   
+
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.section-container h2 {
+    font-size: 2.2rem;
+    color: #1a1e36;
+    margin-bottom: 15px;
+   
+    
+}
+
+.section-lead {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    
+}
+
+/* Flexbox Grid Layout */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+
+}
+
+.info-card {
+    flex: 1 1 300px;
+    max-width: 380px;
+    background-color: #f4fcc8;
+    padding: 35px 25px;
+    border-radius: 8px;
+    border-top: 4px solid #37c2a4;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    color: #1a1e36;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Footer (Basic CSS) */
+.main-footer {
+    background: #03061a;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+
+
+

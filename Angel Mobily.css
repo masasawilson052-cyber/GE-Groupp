@@ -1,0 +1,131 @@
+body{
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background: #0f172a;
+    color: whitesmoke;
+}
+header{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    border-bottom: 3px solid #c8702a;
+    color: #f5f0e8;
+    background-color: #1a1208;
+}
+span{
+    font-family: 'playfair display', serif;
+    font-style: italic;
+    color: #c8702a;
+    letter-spacing: 0.02rem;
+    font-size: 1.1rem;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+}
+nav{
+    color: #f5f0e8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover {
+    color: #c8702a;
+    border-bottom-color:#c8702a;
+}
+h1{
+    font-family: 'playfair display', serif;
+    font-weight: 900;
+    color: whitesmoke;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+span.name{
+    display: block;
+    color: #c8702a;
+}
+.profile-pic{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #c8702a;   
+}
+hr{
+    border: none;
+    border-top: 2px solid #c8702a;
+}
+h2 {
+    color: #c8702a;
+    font-size: 2rem;
+}
+section{
+    max-width: 900px;
+    margin:0 auto 4rem;padding: 0 2rem;
+}
+strong{
+    color: #c8702a;
+    font-style: italic;
+}
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+}
+.skills-grid li{
+    background-color: #1a1208;
+    color: #f5f0e8;
+    padding: 0.45rem 1.1rem;
+    border-radius: 2px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    position: relative;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+thead tr {
+    background: #1a1208;
+    color: #c8702a;
+}
+.hobbies-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+}
+.hobbies-grid li{
+    background-color: #1a1208;
+    color: #f5f0e8;
+    padding: 0.45rem 1.1rem;
+    border-radius: 2px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    position: relative;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+}
+footer{
+    background: #1a1208;
+    color: #c8702a;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}

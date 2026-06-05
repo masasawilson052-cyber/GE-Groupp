@@ -1,0 +1,177 @@
+
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #272c1a; /* Rich, modern slate background */
+    color: rgb(248, 250, 252); /* Crisp, bright off-white text */
+    line-height: 1.7;
+    padding: 50px 20px;
+}
+
+
+
+/* ==========================================
+   TYPOGRAPHY & GLOWING HEADERS
+   ========================================== */
+/* Page Title - Vivid & Large */
+h2: {
+    font-size: 2.6rem;
+    text-align: center;
+    color: #00ffcc; /* Bright electric mint green */
+    font-weight: 2000000;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+    margin-bottom: 5px;
+}
+
+/* Section Headings (About Me, Skills, Education, etc.) */
+h3 {
+    font-size: 1.6rem;
+    color: #ff6b6b; /* Vivid Coral/Orange */
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 2px dashed #ff6b6b;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+/* Small Subheaders */
+h4 {
+    font-size: 1.15rem;
+    color: #94a3b8; /* Cool gray */
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #e2e8f0;
+    margin-bottom: 16px;
+}
+
+/* Targets bold labels for higher visibility */
+b, strong {
+    color: #00ffcc; 
+    font-weight: 700;
+}
+
+/*  PROFILE IMAGE EFFECT */
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.profile img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 50px; /* Smooth squircle shape */
+    border: 3.5px solid #00ffcc; /* Mint green frame */
+    box-shadow: 0 8px 25px rgba(0, 255, 204, 0.25);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile img:hover {
+    transform: scale(1.06) rotate(360deg);
+    border-color: #ff6b6b;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.35);
+}
+
+/* LISTS & ACCENTS (Skills, Hobbies) */
+ol, ul, dl {
+    background: #242c3f; /* Deep contrasting card background */
+    padding: 25px 35px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+}
+
+li, dt, dd {
+    font-size: 1.05rem;
+    color: #f1f5f9;
+    margin-bottom: 10px;
+}
+
+li:last-child, dd:last-child {
+    margin-bottom: 0;
+}
+
+/* Custom numbers and bullets */
+li::marker, dt {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* Description list spacing */
+dt {
+    margin-top: 15px;
+}
+dt:first-of-type {
+    margin-top: 0;
+}
+dd {
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+/*  LINK BUTTONS */
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #00ffcc;
+    transition:  0.2s ;
+}
+
+a:hover {
+    color: #1a1f2c;
+    background-color: #00ffcc;
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+/* ==========================================
+   TABLE DESIGN
+   ========================================== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #242c3f;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #334155;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Cells */
+tr:first-child th {
+    background-color: #2e394e;
+    color: #00ffcc;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid #475569;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #2d3748;
+    color: #e2e8f0;
+}
+
+/* Remove border line for last row */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Subtle highlights on row hover */
+tr:hover {
+    background-color: #2d3748;
+}

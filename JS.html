@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crispin Mulokozi Kamugisha</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">CMK.</div>
+    <div class="nav-links">
+      <button class="theme-toggle" id="themeToggleBtn">Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH TYPEWRITER -->
+  <section class="hero">
+    <h1>My name is Crispin Mulokozi Kamugisha.</h1>
+    <div class="profile-text" id="typewriter-text"></div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Programming</h3>
+        <ul class="skill-list">
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Python (beginner)</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Coordination</h3>
+        <ul class="skill-list">
+          <li>Team Leadership</li>
+          <li>Project Planning</li>
+          <li>Group Communication</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Creativity</h3>
+        <ul class="skill-list">
+          <li>Web Design</li>
+          <li>Problem Solving</li>
+          <li>Idea Generation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <div class="table-header">
+      <h2 class="section-title" style="margin:0;">Education</h2>
+      <button class="sort-btn" id="sortEduBtn">Sort by Year</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Level</th>
+          <th>Institution</th>
+          <th>Timeline</th>
+        </tr>
+      </thead>
+      <tbody id="eduTableBody">
+        <tr>
+          <td>Undergraduate</td>
+          <td>University of Dar es Salaam</td>
+          <td>2026 to current</td>
+        </tr>
+        <tr>
+          <td>Advanced Level</td>
+          <td>Tabora Boys' High School</td>
+          <td>2023 to 2025</td>
+        </tr>
+        <tr>
+          <td>Ordinary Level</td>
+          <td>Mzumbe Secondary School</td>
+          <td>2019 to 2022</td>
+        </tr>
+        <tr>
+          <td>Primary Level</td>
+          <td>St. Achileus Kiwanuka Primary School</td>
+          <td>2012 to 2018</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- HOBBIES ACCORDION -->
+  <section id="hobbies">
+    <h2 class="section-title">Hobbies & Interests</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">Tennis <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>I love playing tennis in my free time. It keeps me active and sharp, and has taught me patience, strategy, and persistence.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Talking to Friends <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>I enjoy meaningful conversations with friends. Exchanging ideas and hearing different perspectives energises me and sparks new thinking.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Hiking <span class="icon">+</span></button>
+        <div class="accordion-content">
+          <p>Hiking lets me explore nature and reset my mind. Reaching a summit and taking in the view reminds me that effort always pays off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASYMMETRICAL GALLERY -->
+  <section id="gallery">
+    <h2 class="section-title">My Favourite Activities</h2>
+    <div class="gallery-wrapper">
+      <img class="gallery-img img-1" src="Tennis ball.jpg" alt="Tennis — my favourite sport" />
+      <img class="gallery-img img-2" src="Cris hiking.jpg" alt="Hiking — overlooking Dar es Salaam" />
+      <img class="gallery-img img-3" src="Umoja Team'25.png" alt="Umoja Team — UWC East Africa 2025" />
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="modalLightbox">
+    <span class="close-lightbox" id="closeLightboxBtn">&times;</span>
+    <img id="lightboxImage" src="" alt="" />
+    <p id="lightboxText"></p>
+  </div>
+  <button id="backToTopBtn" title="Go to top">↑</button>
+  <!-- FOOTER -->
+  <footer>
+    <div>&copy; 2026 Crispin Mulokozi Kamugisha</div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC link -->
+   <script src="Javasript.js"></script>
+</body>
+</html>

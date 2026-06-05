@@ -1,0 +1,203 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #0d1117; /* Deep rich dark blue */
+    color: #f0f6fc; /* Bright, clear white-blue text */
+    line-height: 1.7;
+    padding: 50px 20px;
+}
+
+/* Centers and constrains the content neatly on the page */
+body > * {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================
+   TYPOGRAPHY & HIGH-CONTRAST HEADINGS
+   ========================================== */
+/* Top Header - Big & Bright */
+body > h1:first-of-type {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.4); /* Subtle glow effect */
+    margin-bottom: 5px;
+    border: none;
+    padding: 0;
+}
+
+/* Main Section Titles */
+h1 {
+    font-size: 2.1rem;
+    color: #00e5ff; /* Vivid cyan */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid #00e5ff;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+/* Subheadings */
+h2 {
+    font-size: 1.3rem;
+    color: #9d4edd; /* Electric purple */
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #c9d1d9; /* High-contrast light gray */
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #00e5ff; /* Makes bold text pop vividly */
+    font-weight: 700;
+}
+
+/* Vibrant colored horizontal separator */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #00e5ff, #9d4edd, transparent);
+    margin: 40px 0;
+}
+
+/* ==========================================
+   PROFILE IMAGE
+   ========================================== */
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.profile img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00e5ff; /* Bright border */
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5); /* Vivid glow */
+    transition: all 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(157, 78, 221, 0.8);
+    border-color: #9d4edd;
+}
+
+/* ==========================================
+   LISTS & CONTENT BOXES
+   ========================================== */
+ol, ul {
+    list-style-position: inside;
+    background: #161b22; /* Dark contrast card background */
+    padding: 25px 35px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+li {
+    margin-bottom: 12px;
+    color: #e6edf3;
+    font-size: 1.05rem;
+}
+
+li::marker {
+    color: #00e5ff; /* Vivid bullets/numbers */
+    font-weight: bold;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Sub-lists */
+ul ul, ol ol {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 8px 0 8px 25px;
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   HYPERLINKS (Vivid Glow)
+   ========================================== */
+a {
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #00e5ff;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #9d4edd;
+    border-bottom: 1px solid #9d4edd;
+    padding: 3px 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+/* ==========================================
+   TABLE DESIGN
+   ========================================== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Row */
+tr:first-child th {
+    background-color: #21262d;
+    color: #00e5ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid #30363d;
+}
+
+th, td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid #21262d;
+    color: #e6edf3;
+}
+
+/* Remove bottom line for the last row */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Highlighting table rows on mouse hover */
+tr:hover {
+    background-color: #1f242d;
+}
